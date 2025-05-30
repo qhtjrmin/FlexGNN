@@ -5,21 +5,21 @@ FlexGNN: A High-Performance, Large-Scale Full-Graph GNN System with Best-Effort 
 To run FlexGNN, you need the following:
 - Docker **v24.0.2** or later
 - CUDA Toolkit **v11.6** or later
-- Nvida GPU with driver **v510** or later
+- NVIDIA GPU with driver **v510** or later
 
 ## Getting started
 #### 1. Clone the repository
 ```bash
-$cd ~/
-$git clone https://github.com/qhtjrmin/FlexGNN.git
-$cd FlexGNN
+$ cd ~/
+$ git clone https://github.com/qhtjrmin/FlexGNN.git
+$ cd FlexGNN
 ```
 
 #### 2. Prepare LibTorch (v1.12.0+)
 Download the version of LibTorch compatible with your CUDA version:
 ```
-$wget https://download.pytorch.org/libtorch/cu116/libtorch-cxx11-abi-shared-with-deps-1.12.0%2Bcu116.zip
-$unzip libtorch-cxx11-abi-shared-with-deps-1.12.0+cu116.zip
+$ wget https://download.pytorch.org/libtorch/cu116/libtorch-cxx11-abi-shared-with-deps-1.12.0%2Bcu116.zip
+$ unzip libtorch-cxx11-abi-shared-with-deps-1.12.0+cu116.zip
 ```
 Make sure the `libtorch` directory is placed in the project root.
 
@@ -30,21 +30,21 @@ You can either:
 > The `prepare_data.py` supports downloading and partitioning datasets.  
 > Note: preprocessing large datasets like ogbn-papers may take significant time.
 
-Examle for downloadng ogbn-products:
+Example for downloading ogbn-products:
 ``` bash
-$mkdir -p dataset/products
-$cd dataset/products
+$ mkdir -p dataset/products
+$ cd dataset/products
 
 # Download pre-partitioned data (example command)
-$wget [URL]
-$unzip [filename].zip
+$ wget [URL]
+$ unzip [filename].zip
 ```
 
 #### 4. Build & Run with Docker
 ```
-$cd ~/FlexGNN/
-$docker build --tag flexgnn .
-$./scripts/run.sh
+$ cd ~/FlexGNN/
+$ docker build --tag flexgnn .
+$ ./scripts/run.sh
 ```
 The `run.sh` script launches the container and executes training.
 
