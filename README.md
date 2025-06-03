@@ -57,4 +57,4 @@ FlexGNN uses configuration files in `.ini` format (via the [inih](https://github
   - Path to the config file
  
 ## License
-This project is licensed under the [GNU General Public License v3.0](./LICENSE).
+This project is licensed under the [MIT License](./LICENSE).
