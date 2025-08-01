@@ -9,7 +9,7 @@ DATA_DIR=$(pwd)/dataset
 CONFIG_DIR=$(pwd)/configs
 
 # Experiment settings
-DATASET=products
+DATASET=arxiv
 INPUT_PATH=/dataset/${DATASET}/
 CONFIG_PATH=/configs/${DATASET}/2hop_256feat.ini
 EPOCHS=10
