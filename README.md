@@ -25,10 +25,10 @@ Make sure the `libtorch` directory is placed in the project root.
 
 #### 3. Prepare dataset
 You can either:
+- Use sample dataset (ogbn-arxiv), **or**
 - Download a **pre-partitioned** version of the Reddit or ogbn-products datasets [here](https://zenodo.org/records/15550620), **or**
 - Generate your own using `source/data/prepare_data.py`
-> The `prepare_data.py` supports downloading and partitioning datasets.  
-> Note: preprocessing large datasets like ogbn-papers may take significant time.
+> The `prepare_data.py` supports downloading and partitioning datasets.
 
 Example for downloading ogbn-products:
 ``` bash
