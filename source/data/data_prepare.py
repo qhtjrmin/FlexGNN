@@ -219,7 +219,7 @@ def prepare_dataset(data_name, output_path, root_path, num_parts=1):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, default='ogbn-products')
-    parser.add_argument('--output_path', type=str, default='/data/')
+    parser.add_argument('--output_path', type=str, default='./dataset/')
     parser.add_argument('--partition_cnt', type=int, default=4)
     parser.add_argument('--metis', action='store_true')
     # args.dataset example: 'reddit', 'ogbn-products', 'ogbn-arxiv', 'ogbn-papers'
